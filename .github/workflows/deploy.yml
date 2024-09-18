@@ -35,7 +35,7 @@ jobs:
           cwd: "./"
           files: |
             build/
-            captain-definition
+            Dockerfile
             node_modules/
             package.json
             package-lock.json
