@@ -1,0 +1,16 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Deploy to CapRover
+        run: |
+          npx caprover deploy -a ${{ secrets.CAPROVER_APP_NAME }} \
+                              -h ${{ secrets.CAPROVER_URL }} \
+                              --appToken ${{ secrets.CAPROVER_PASSWORD }}
