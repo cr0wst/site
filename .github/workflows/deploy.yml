@@ -36,6 +36,9 @@ jobs:
           files: |
             build/
             captain-definition
+            node_modules/
+            package.json
+            package-lock.json
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
