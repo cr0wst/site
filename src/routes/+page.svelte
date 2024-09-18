@@ -20,7 +20,7 @@
 	]
 </script>
 
-<div class="w-full bg-white p-8">
+<div class="w-full my-auto bg-white p-8">
 	<div class="flex flex-col justify-between items-center space-y-4">
 		<!-- Profile Image -->
 		<div
