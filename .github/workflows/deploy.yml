@@ -18,11 +18,13 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+
       - run: npm ci
       - run: npm run build --if-present
       - run: npm run test --if-present
@@ -33,7 +35,7 @@ jobs:
           cwd: "./"
           files: |
             build/
-            captain-definition
+            captain-definition  # Include the captain-definition file
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
