@@ -3,8 +3,13 @@
 	import DevRainbowBadge from '../components/SocialBadges/DevRainbowBadge.svelte';
 	import GitLabBadge from '../components/SocialBadges/GitLabBadge.svelte';
 	import GitHubBadge from '../components/SocialBadges/GitHubBadge.svelte';
+	import JsonResume from '../components/SocialBadges/JsonResume.svelte';
 
 	const socialBadges = [
+		{
+			svg: JsonResume,
+			link: 'https://registry.jsonresume.org/cr0wst'
+		},
 		{
 			svg: DevRainbowBadge,
 			link: 'https://dev.to/cr0wst'
