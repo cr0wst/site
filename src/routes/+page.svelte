@@ -25,16 +25,16 @@
 	];
 </script>
 
-<div class="w-full md:w-3/4 my-auto bg-white p-8 md:rounded-md md:drop-shadow-lg">
+<div class="w-full md:w-4/5 lg:w-3/5 lg:max-w-[990px] my-auto bg-white p-8 md:rounded-md md:drop-shadow-lg">
 	<div class="flex flex-col justify-between items-center space-y-4">
 		<div class="flex flex-col items-center justify-center md:space-y-0 md:space-x-4 space-y-4 md:flex-row-reverse">
 			<!-- Profile Image -->
 			<div
-				class="relative w-16 md:w-64 aspect-square bg-emerald-600 rounded-full rounded-bl-none flex items-center justify-center">
+				class="relative w-16 sm:w-64 aspect-square bg-emerald-600 rounded-full rounded-bl-none flex items-center justify-center">
 				<img
 					alt="Me"
 					src="/me.jpg"
-					class="absolute w-16 md:w-64 aspect-square rounded-full rounded-bl-none border-4 border-slate-600 -top-2 -right-2"
+					class="absolute w-16 sm:w-64 aspect-square rounded-full rounded-bl-none border-4 border-slate-600 -top-2 -right-2"
 				/>
 			</div>
 
